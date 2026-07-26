@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유채호 — AI · Backend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="lang-switch"><a href="/en/">English</a></nav>
+
+  <header>
+    <h1>유채호</h1>
+    <p class="subtitle">AI · Backend Developer</p>
+  </header>
+
+  <section>
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li><span>Email</span> <a href="mailto:cjy1018@sju.ac.kr">cjy1018@sju.ac.kr</a></li>
+      <li><span>GitHub</span> <a href="https://github.com/GonGe1018">github.com/GonGe1018</a></li>
+      <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/chy1018/">linkedin.com/in/chy1018</a></li>
+      <li><span>Blog</span> <a href="https://blog.chaeho.dev">blog.chaeho.dev</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>세종대학교</h3>
+        <span class="date">2026.03 ~ 현재</span>
+      </div>
+      <p class="role">자연생명계열</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>선린인터넷고등학교</h3>
+        <span class="date">2023.03 ~ 2026.02</span>
+      </div>
+      <p class="role">소프트웨어과</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills-grid">
+      <dt>AI / ML</dt>
+      <dd>Python, PyTorch, Hugging Face, OpenAI API, LLM, RAG, Embedding Search, FAISS, Fine-tuning, LoRA, VAE, LSTM</dd>
+      <dt>Backend</dt>
+      <dd>FastAPI, REST API, MongoDB, SQL(PostgreSQL)</dd>
+      <dt>Frontend</dt>
+      <dd>React, Next.js, Electron, Figma</dd>
+      <dt>Tools</dt>
+      <dd>Git/GitHub, Linux, Unity, C, JavaScript/TypeScript, C#</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Publication</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>벡터 검색을 위한 거리 순위 보존 기반 신경망 차원 축소 기법</h3>
+        <span class="date">KCC 2026</span>
+      </div>
+      <p class="desc">RAG 시스템에서 벡터 검색 속도와 메모리 사용량이 서비스 응답 성능의 병목이 될 수 있다는 문제의식에서 시작한 개인 연구입니다. 임베딩 벡터의 차원을 줄이면서도 원본 검색 결과를 보존하기 위해 거리 관계와 KNN 이웃 순위를 함께 보존하는 신경망 기반 차원 축소 모델을 설계했습니다.</p>
+      <p class="desc">768차원 임베딩을 384차원으로 줄이면서도 FAISS HNSW 인덱스에서 검색 결과를 약 89.9% 이상 유지했고, 검색 속도는 약 1.5배 향상, 메모리 사용량은 약 48.2% 감소시키는 결과를 얻었습니다. 고등학교 재학 중 시작한 연구를 대학 진학 후 논문으로 정리해 KCC 2026에 제출했고, 채택되어 첫 학술대회 발표를 진행했습니다.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Scholub — AI 논문 플랫폼</h3>
+        <span class="date">2025.04 ~ 2025.07</span>
+      </div>
+      <p class="role">3인 팀 프로젝트 / 팀장 / AI 기능 개발 / 백엔드 개발 / UI·UX 디자인</p>
+      <p class="desc">매일 수많은 논문이 공개되지만, 중요한 논문을 빠르게 찾고 이해하기 어렵다는 문제에서 출발한 AI 기반 논문 플랫폼입니다. arXiv 논문을 수집하고, 일정 기준에 따라 선별한 뒤, 뉴스 콘텐츠 형태로 변환해 사용자에게 제공하는 구조를 설계했습니다.</p>
+      <p class="desc">논문 수집·선별·뉴스 가공 파이프라인, 추천 기능, 백엔드 구조, 전체 UI/UX 디자인을 담당했습니다. The AI Scientist 연구를 참고하여 LLM이 self-reflection과 앙상블 방식을 활용해 논문을 평가하고 선별하는 구조를 도입했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>VEDGE — 티켓팅 부정행위 및 암표 방지 플랫폼 (<a href="https://github.com/GonGe1018/ClockCAPTCHA">ClockCAPTCHA</a>)</h3>
+        <span class="date">2024.11</span>
+      </div>
+      <p class="role">팀 프로젝트 / 핵심 아이디어 및 기획 / AI·CV 기능 개발</p>
+      <p class="desc">기존 티켓팅 플랫폼이 Selenium 같은 자동화 도구로 쉽게 조작될 수 있다는 문제에서 출발한 프로젝트입니다. 암표 거래를 사후에 막는 것이 아니라, 부정 예매가 발생하기 어려운 티켓팅 구조를 만드는 데 초점을 맞췄습니다.</p>
+      <p class="desc">Selenium이 HTML element를 특정하기 어렵게 만드는 Selenium-Guard 아이디어를 제안했고, 인간은 쉽게 읽을 수 있지만 CV 모델은 인식하기 어려운 아날로그 시계 CAPTCHA를 개발했습니다. 또한 모바일 티켓의 eKYC를 위해 iPhone TrueDepth 카메라 기반 얼굴 인식 방식을 연구했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3><a href="https://github.com/GonGe1018/RootLLM">RootLLM</a> — LLM 시스템 제어 행동 관찰</h3>
+        <span class="date">2025.06 ~ 2025.07</span>
+      </div>
+      <p class="role">2인 팀 프로젝트 / 팀장 / 참여율 70%</p>
+      <p class="desc">LLM 기반 에이전트가 컴퓨터 시스템을 직접 조작할 수 있을 때 어떤 행동 양상을 보이는지 관찰한 프로젝트입니다. 기존 LLM 안전성 논의가 답변 통제에 집중되어 있는 반면, 실제 시스템에서의 '행동'에 대한 고찰은 부족하다고 보고 실험을 설계했습니다.</p>
+      <p class="desc">라즈베리파이와 VM 기반 리눅스 환경을 구축하고, LLM이 SSH를 통해 명령을 실행하도록 했습니다. 시스템 환경 정보 수집, 업데이트, 보안 강화, 웹 서버 실행 등의 행동 패턴을 관찰했습니다. 프로젝트 기획, 실험 설계, 인스턴스 세팅, SSH 입출력 제어 모듈, self-reflection 프롬프트 구조를 담당했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Sunrin-Waifu — 개인화된 AI 채팅 인터페이스</h3>
+        <span class="date">2024</span>
+      </div>
+      <p class="role">개인/팀 프로젝트 / 기획 / 디자인 / 백엔드 개발</p>
+      <p class="desc">사용자가 AI를 단순한 챗봇이 아니라 친구처럼 느낄 수 있도록 만드는 것을 목표로 한 AI 채팅 인터페이스입니다. LLM을 활용해 대화를 생성하고, VITS로 음성을 합성했으며, Live2D 캐릭터 애니메이션을 적용했습니다. React와 Electron 기반 데스크톱 애플리케이션으로 개발했으며, 전반적인 기획, 전체 디자인, 백엔드 개발을 담당했습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Awards</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>2025 디지털콘텐츠 개발대회 금상</h3>
+      </div>
+      <p class="role">Scholub — AI 논문 플랫폼</p>
+      <p class="desc">arXiv 논문을 수집·선별하고 뉴스 콘텐츠로 변환하는 AI 기반 플랫폼을 개발했습니다. 프로젝트 기획, AI 기능 개발, 백엔드 개발, UI/UX 디자인, 팀장 역할을 맡았습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>2024 디지털콘텐츠 개발대회 생활부문 금상</h3>
+      </div>
+      <p class="role">VEDGE — 티켓팅 부정행위 및 암표 방지 플랫폼</p>
+      <p class="desc">티켓팅 자동화와 암표 문제를 해결하기 위한 플랫폼을 개발했습니다. Selenium-Guard 아이디어, 아날로그 시계 CAPTCHA, TrueDepth 기반 얼굴 인식/eKYC 연구를 담당했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>2024 디지털콘텐츠 개발대회 게임부문 동상</h3>
+      </div>
+      <p class="role">BunnySnooper2 - BlackDawn</p>
+      <p class="desc">디펜스 게임 프로젝트에서 게임 기획, UI, 뉴스 시스템, 건물 및 캐릭터 관련 기능 개발을 담당했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>2024 제27회 앱잼 미래산업부문 장려상</h3>
+      </div>
+      <p class="role">두두 — 경계선 지능인을 위한 AI 보조 앱</p>
+      <p class="desc">경계선 지능인의 일상생활을 돕는 AI 캐릭터 기반 앱을 개발했습니다. LLM 기능과 앱 백엔드 개발을 담당했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>2024 제9회 하이톤 우수상</h3>
+      </div>
+      <p class="role">좋은 밤 좋은 꿈</p>
+      <p class="desc">하이퍼캐주얼 게임 프로젝트에서 아이템, HTTP 통신 관련 기능, 발표자료 제작 및 발표를 담당했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>2023 제9회 선린 해커톤 게임부문 대상</h3>
+      </div>
+      <p class="role">MonsCure</p>
+      <p class="desc">'건강'이라는 주제를 게임 속 몬스터의 건강으로 재해석한 2D RPG 게임을 개발했습니다. 첫 스테이지, 플레이어 이동, Git 협업 관리, 발표자료 제작을 담당했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>2023 제9회 선린 해커톤 게임부문 동상</h3>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Leadership & Activities</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <h3><a href="https://sunrin-para.dev/">PARA</a> — 선린인터넷고등학교 인공지능 연구·개발 동아리</h3>
+        <span class="date">2023.11 ~ 2025.02</span>
+      </div>
+      <p class="role">설립 및 운영 / 수업 진행 / 프로젝트 멘토링</p>
+      <p class="desc">교내에 인공지능을 깊게 다루는 환경이 부족하다고 느껴 인공지능 연구·개발 동아리 PARA를 개설하고 운영했습니다. 개설 전 수요 조사, 홍보, 브랜딩, 웹사이트 제작, 면접, 부원 선발, 커리큘럼 설계 등 운영 전반을 담당했습니다.</p>
+      <p class="desc">동아리의 전반적인 수업을 진행했습니다. 개발 경험이 적은 후배들이 개인 프로젝트를 완성할 수 있도록 멘토링했으며, 동아리는 이후 학과 소속 정식 동아리로 승격되었습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>SSG — 세종대학교 보안 동아리</h3>
+        <span class="date">2026 ~ 현재</span>
+      </div>
+      <p class="desc">대학 입학 후 보안 분야로 관심을 확장하며 C언어, 컴퓨터 구조, 웹, 네트워크 등 보안 기초를 학습하고 있습니다. 기존의 AI·서비스 개발 경험을 시스템 구조와 보안 관점으로 확장하고 있습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Teaching & Mentoring</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>소프트웨어 나눔 축제</h3>
+        <span class="date">2023, 2024</span>
+      </div>
+      <p class="role">교육 행사 기획 및 운영</p>
+      <p class="desc">중학생 대상 소프트웨어 교육 행사에서 교재 집필, 발표자료 제작, 수업, 실습 프로젝트 개발을 담당했습니다. 2023년에는 Unity 게임 개발 교육을, 2024년에는 LLM 채팅 플랫폼 개발 교육을 진행했습니다.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>PARA 정규 수업 운영</h3>
+        <span class="date">2024</span>
+      </div>
+      <p class="role">AI / LLM / Backend 교육</p>
+      <p class="desc">PARA 부원들을 대상으로 Python, 인공지능 개론, 자연어 처리, LLM 활용, 프롬프트 엔지니어링, 파인튜닝, FastAPI, MongoDB 등을 주제로 수업을 진행했습니다. 처음 배우는 학생도 실습 결과물을 만들 수 있도록 커리큘럼과 자료를 직접 설계했습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hackathon Experience</h2>
+    <p class="desc" style="margin-bottom: 12px;">총 6회의 해커톤에 참여하며 게임 개발, AI 서비스, 웹 서비스, 백엔드 개발 등 다양한 형태의 결과물을 제한된 시간 안에 완성했습니다.</p>
+    <ul class="plain">
+      <li>2023 제9회 선린 해커톤 게임부문 대상</li>
+      <li>2024 제10회 선린 해커톤 게임부문 동상</li>
+      <li>2024 제9회 하이톤 우수상</li>
+      <li>2024 제27회 앱잼 미래산업부문 장려상</li>
+      <li>2024 Hack Club Counterspell Seoul 참가</li>
+      <li>2025 제11회 선린 해커톤 생활부문 참가</li>
+    </ul>
+  </section>
+
+</body>
+</html>

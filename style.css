@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #555;
+}
+
+header {
+  margin-bottom: 48px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+header .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+header .bio {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.lang-switch {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 13px;
+  color: #888;
+}
+
+.lang-switch a {
+  color: #555;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section > h2 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #888;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.entry {
+  margin-bottom: 24px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.entry-header h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.entry-header .date {
+  font-size: 13px;
+  color: #888;
+  white-space: nowrap;
+}
+
+.entry .role {
+  font-size: 14px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.entry .desc {
+  font-size: 14px;
+  color: #333;
+  margin-top: 6px;
+  line-height: 1.65;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 8px 16px;
+  font-size: 14px;
+}
+
+.skills-grid dt {
+  font-weight: 600;
+  color: #333;
+}
+
+.skills-grid dd {
+  color: #555;
+}
+
+ul.plain {
+  list-style: none;
+  padding: 0;
+}
+
+ul.plain li {
+  font-size: 14px;
+  color: #333;
+  padding: 3px 0;
+}
+
+ul.plain li::before {
+  content: "– ";
+  color: #aaa;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.contact-list li {
+  padding: 2px 0;
+}
+
+.contact-list li span {
+  display: inline-block;
+  width: 60px;
+  color: #888;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 40px 16px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-header {
+    flex-direction: column;
+  }
+
+  .lang-switch {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
